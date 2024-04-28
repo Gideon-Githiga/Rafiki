@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="sidebar">
+            <li onclick=closeSide()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 
+                224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contacts">Contacts</a></li>
+           </ul>
+           <ul>   
+            <li><a href="#">Logo</a></li>
+            <li class="btn" onclick=sidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" 
+                viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            <li class="hide"><a href="#Contacts">Contacts</a></li>
+            <li class="hide"><a href="#services">Services</a></li>
+            <li class="hide"><a href="#Home">Home</a></li>
+           </ul>
+          
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>Hello, <span></span> </h1>
+                <h1>My Name is <span></span></h1>
+                <h1>Gideon <span></span></h1>
+                <a href="#" type="button" class="cta">Portfolio</a>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="services container">
+            <div class="service-top">
+                <h1 class="section-title">SERV<span>I</span>CES</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Neque quo enim obcaecati porro optio repellat doloremque.
+                      Possimus rerum, eos distinctio sapiente, officia necessit
+                      atibus ipsam quis, cum quaerat numquam similique beatae dolo
+                      remque id? Qui dicta pariatur sunt excepturi velit in est cupi
+                      ditate, neque, fugiat ipsa architecto soluta nesciunt similique 
+                      atque dolorem eaque. Aperiam minima officiis vero aliquam assumen
+                      da nostrum quod dicta, quos deleniti perspiciatis reprehenderit de
+                      bitis pariatur doloribus ea quibusdam harum recusandae et? Temporib
+                      us earum qui architecto harum provident, assumenda voluptas, eligend
+                      i ipsam nam excepturi dolore quo reprehenderit doloremque sint quas, 
+                      distinctio itaque accusantium odio aperiam corrupti ipsum aliquid enim iure.</p>
+            </div>
+            <div class="service-bottom">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#">back to top</a>
+    </footer>
+    <script>
+        function sidebar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display= 'flex'
+        }
+        function closeSide(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display= 'none'
+        }
+    </script>
+</body>
+</html>
