@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+        <nav class="navbar">
+            <ul class="sidebar">
+            <li class="bom" onclick=closeSide()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 
+                224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contacts">Contacts</a></li>
+           </ul>
+           <ul>   
+            <li><a href="#">Logo</a></li>
+            <li class="bom" onclick=sidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" 
+                viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            <li class="hide"><a href="tel: 0713754433">Hire me</a></li>
+            <li class="hide"><a href="#services">Services</a></li>
+            <li class="hide"><a href="#Home">Home</a></li>
+           </ul>
+          
+        </nav>
+    
+   
+        <section id="hero">
+            <div class="hero container">
+                <div>
+                    <h1>Hello, My Name is Gideon.<span></span> </h1>
+                    <h1>I am a UI Designer.<span></span></h1>
+                    <h1>I Need a Mentor
+                 <span></span></h1>
+                    <a href="tel:+254100102338" type="button" class="cta">Call Me</a>
+                    <hr><br>
+                    <h3>About Me</h3>
+                    <p>I have been learning how to be a frontend developer for sometime now (say two weeks).
+                    I need a person who can help me to grow my skills so that I can become a better designer. That 
+                    is why I am prepared to work under a mentor, even if I will work for free, who can provide real
+                        world experience when it comes to web development.
+                    </p><hr><br>
+                    <button><a class="ref" href="mailto:rafikigideon@gmail.com">Email</a></button>
+                    <br><br><button><a class="ref" href="https://www.linkedin.com/in/gideon-rafiki-b975862ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></button>
+                    <br><br><button><a class="ref" href="https://www.facebook.com/gideon.githiga.5">Facebook</a></button>
+                    <br><br><button><a class="ref" href="https://wa.me/message/SZTCSMHYGYI3G1">WhatsApp</a></button>
+                    
+
+                </div>
+            </div>
+            
+        </section>
+   
+   
+    <script>
+        function send(){
+            send
+        }
+        function sidebar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display= 'flex'
+        }
+        function closeSide(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display= 'none'
+        }
+    </script>
+</body>
+</html>
